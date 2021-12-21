@@ -7,6 +7,11 @@ body {
     color: #274C77;
     font-family: "Marianne", sans-serif ;
     margin: 0px;
+    
+}
+
+a:visited {
+    color: inherit;
 }
 
 .topmenu {
@@ -30,7 +35,7 @@ body {
 .title-main {
     font-size: 48px;
     text-align: center;
-    background-image: url(images/titre02.png); 
+    background-image: url(images/titre02.png);
     background-color: #6096BA;
     height: 100px;
     padding: 20px;
@@ -38,6 +43,7 @@ body {
     }
 
 .page {
+        background-image: url(images/building_background01.png);
         color: black;
         background-color: #6096BA;
         padding: 20px;
