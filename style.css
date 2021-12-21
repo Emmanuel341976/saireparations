@@ -17,12 +17,14 @@ body {
     left: 0px;
     right: 0px;
     height: 100px;
-    padding: 30px;
+    padding: 35px;
     margin:  0px;
    }
 
 .topmenu a {
     padding: 0px 20px 20px 20px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .title-main {
@@ -46,5 +48,19 @@ body {
     padding: 20px;
 
 }
+
+.footer {
+    background-color: #274C77;
+    color: #E7ECEF;
+    font-size: 14px;
+    height: 100px;
+    padding: 20px;
+    margin:  0px;
+}
+.footer p {
+    padding: 0px;
+    margin:  0px;
+}
+
 
 
