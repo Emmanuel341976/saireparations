@@ -3,7 +3,7 @@
         <head>
             <meta charset="UTF-8">
             <link rel="stylesheet" href="style.css"/>
-            <title>Plateforme immobilière SAI GGD34</title>
+            <title>Demande de réparation</title>
             <link rel="icon" type="image/png" href="images/maintenance32.png" />
         </head>
         <body>
@@ -25,21 +25,95 @@
 
 
             <section class="page">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quisquam illum, optio tempore aut itaque sunt? Delectus corporis eos aliquam asperiores magnam, nostrum, eligendi expedita fuga rem eius ex aliquid!</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique aspernatur molestiae deleniti ipsa ipsum adipisci necessitatibus magni earum nam non inventore alias veritatis nostrum dolor, impedit possimus perspiciatis soluta velit!
-                Corporis recusandae provident at reprehenderit quo qui dolor magni dignissimos dolorum corrupti deserunt neque dolorem sed numquam autem dicta, temporibus fuga consectetur ullam cupiditate minima! Placeat blanditiis voluptatibus nulla omnis.
-                Eos animi quaerat dolore voluptas! Quia, eius a! Quidem cupiditate deleniti, similique beatae molestias inventore hic fugit ullam voluptatum omnis eaque obcaecati enim, laudantium, nemo veritatis necessitatibus quos velit placeat?
-                Recusandae libero voluptates alias aliquid laborum ex. Atque laboriosam explicabo aspernatur voluptas nisi iure ipsa fugiat magnam facere beatae, at sequi placeat omnis ratione? Explicabo minus facere ab ullam eius.
-                Delectus alias minima quia dolor velit non ad repellat, quod, sint itaque voluptatum et tempore modi! Labore, animi ipsum ipsam eligendi omnis consectetur officia doloribus odit tempore quisquam quae exercitationem!
-                Illum numquam molestiae beatae odit nesciunt maiores facere vitae perspiciatis obcaecati nam soluta sit quas quisquam, earum corrupti eius laborum, voluptatem id labore atque neque veniam tenetur! Quasi, eum voluptate?
-                Earum quod, debitis dicta eaque hic quae. Possimus perferendis nihil eaque ad nobis, laboriosam qui nesciunt iusto porro ex recusandae atque dignissimos, incidunt animi asperiores commodi corrupti accusamus ullam. At.
-                Commodi totam, exercitationem harum aliquam minus numquam architecto magnam officiis in et molestiae velit? Magni ipsa, harum ratione adipisci ex facilis voluptate molestiae dignissimos aperiam nemo possimus, consectetur minima iste.
-                Aliquam, similique aliquid. Hic ullam necessitatibus dolorem consectetur voluptatum libero, facere qui eveniet fuga illum tempore exercitationem iure sit consequatur, veritatis sunt quod excepturi doloremque ratione voluptates sed ipsam! Optio!
-                Amet vitae autem dolor deserunt recusandae totam omnis iste? Repellendus quidem voluptates itaque corrupti magni, illo totam fugit nemo mollitia, possimus eum provident alias, veritatis commodi ducimus necessitatibus voluptas exercitationem.
-                Quisquam minima commodi, quasi illum assumenda accusantium illo quae ipsam velit harum quod odio ut accusamus voluptate distinctio natus dolores. Debitis, quia porro. Libero iure aut impedit laborum, eius ut?
-                Alias dignissimos, asperiores ad est beatae sed quod voluptatibus inventore perspiciatis itaque autem sint rem nostrum sequi quas aliquid laborum eveniet velit soluta excepturi eius id similique quia incidunt. A?
-                Perferendis, magni recusandae asperiores accusantium delectus eaque ad architecto culpa earum aliquam excepturi amet numquam quaerat tempora explicabo ipsa a eius placeat? Eius deleniti, quia quos voluptates nemo ullam architecto.
-                Illo non recusandae laborum quis. Esse veniam, reiciendis dolore nam sequi corporis quo, deserunt atque non laudantium ab. Ab quia maxime at quaerat mollitia vel consequatur itaque sunt? Magnam, deserunt.</p>
+               <form method="post" action="taitement.php">
+                    <p>Demande d'intervention</p>
+                    <p>
+                        <label for="date-demande">Date de la demande</label>
+                        <input type="date" name="date-demande" id="date-demande" autofocus required/>
+                    </p>
+
+                    <p>
+                    <label for="objet-demande">Objet de la demande</label>
+                        <input type="text" name="objet-demande" id="objet-demande" size="150" required/>
+                    </p>
+
+                    <p>
+                        <label for="reference-demande">Référence de la demande</label>
+                        <input type="text" name="reference-demande" id="reference-demande" size="150" required/>
+                    </p>
+
+                    <p>
+                        <label for="caserne">Caserne</label>
+                        <input type="text" name="caserne" id="caserne" size="150" required/>
+                    </p>
+
+                    <p>
+                        <label for="num-ui">N° UI (13 chiffres)</label>
+                        <input type="text" name="num-ui" id="num-ui" size="150" required/>
+                    </p>
+
+                    <p>
+                        <label for="adresse">Adresse</label>
+                        <input type="text" name="adresse" id="adresse" size="150" required/>
+                    </p>
+
+                    <p>
+                        <label for="firstname">Nom</label>
+                        <input type="text" name="firstname" id="firstname" size="50" required/>
+                        <label for="lastname">Prénom</label>
+                        <input type="text" name="lastname" id="lastname" size="50" required/>
+                    </p>
+
+                    <p>
+                        <label for="tel">Télephone</label>
+                        <input type="tel" name="tel" id="tel" size="50" required/>
+                    </p>
+
+                    <p>
+                        <label for="categorie">Catégorie de réparation</label>
+                        <select type="tel" name="categorie" id="categorie" required/>
+                            <option value="plomberie">Plomberie</option>
+                            <option value="electriite">Electricité</option>
+                            <option value="menuiserie">Menuiserie</option>
+                            <option value="couverture">Couverture</option>
+                            <option value="chauffage">Chauffage</option>
+                            <option value="climatisation">Climatisation</option>
+                            <option value="isolation">Isolation</option>
+                            <option value="etancheite">Etanchéité</option>
+                            <option value="portail">Portail</option>
+                            <option value="portilloon">Portillon</option>
+                            <option value="serrurerie">Serrurerie</option>
+                            <option value="assainissement">Assainissement</option>
+                        </select>
+                    
+                    </p>
+
+                    <p>
+                        <label for="description">Déscription détaillée du problème</label><br/>
+                        <textarea name="description" id="description" size="50"/></textarea>
+                    </p>
+
+                    <input type="submit" value="Envoyer" />
+                    
+                    <!-- champs de saisie à ne pas faire figurer sur la demande d'intervention?
+                    <p>
+                        <label for="visa">Visa et transmis du commandant de caserne</label>
+                        <input type="text" name="visa" id="visa" size="150"/>
+                    </p>  -->
+
+                    <!-- champs de saisie à ne pas faire figurer sur la demande d'intervention?
+                    <p>
+                        <label for="priseencompte">Prise en compte par le SAI</label>
+                        <input type="text" name="priseencompte" id="priseencompte" size="150"/>
+                    </p>  -->
+
+                    <!--
+                    <p>
+                        <label for="intervenant">Intervenant</label>
+                        <input type="text" name="intervenant" id="intervenant" size="150"/>
+                    </p> -->
+
+               </form>
             </section>
 
 
