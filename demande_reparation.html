@@ -19,13 +19,14 @@
                     <a href="connexion.html">Connexion</a>
                 </nav>
                 
-                <p class="title-main">Plateforme Immobilière SAI GGD34</p> 
+                <h1 class="title-main">Plateforme Immobilière SAI GGD34</h1> 
                 
             </header>
 
 
             <section class="page">
-               <form method="post" action="taitement.php">
+               <div class="formulaire">
+                   <form id="demand_form" method="post" action="taitement.php">
                     <p>Demande d'intervention</p>
                     <p>
                         <label for="date-demande">Date de la demande</label>
@@ -34,27 +35,27 @@
 
                     <p>
                     <label for="objet-demande">Objet de la demande</label>
-                        <input type="text" name="objet-demande" id="objet-demande" size="150" required/>
+                        <input type="text" name="objet-demande" id="objet-demande" size="15" required/>
                     </p>
 
                     <p>
                         <label for="reference-demande">Référence de la demande</label>
-                        <input type="text" name="reference-demande" id="reference-demande" size="150" required/>
+                        <input type="text" name="reference-demande" id="reference-demande" size="15" required/>
                     </p>
 
                     <p>
                         <label for="caserne">Caserne</label>
-                        <input type="text" name="caserne" id="caserne" size="150" required/>
+                        <input type="text" name="caserne" id="caserne" size="15" required/>
                     </p>
 
                     <p>
                         <label for="num-ui">N° UI (13 chiffres)</label>
-                        <input type="text" name="num-ui" id="num-ui" size="150" required/>
+                        <input type="text" name="num-ui" id="num-ui" size="15" required/>
                     </p>
 
                     <p>
                         <label for="adresse">Adresse</label>
-                        <input type="text" name="adresse" id="adresse" size="150" required/>
+                        <input type="text" name="adresse" id="adresse" size="15" required/>
                     </p>
 
                     <p>
@@ -113,7 +114,8 @@
                         <input type="text" name="intervenant" id="intervenant" size="150"/>
                     </p> -->
 
-               </form>
+                    </form>
+                </div>
             </section>
 
 
