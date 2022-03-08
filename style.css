@@ -2,8 +2,11 @@ body {
     font-size: 18px;
     color: #274C77;
     font-family: "Marianne", sans-serif ;
-    margin: 0px;    
-    }
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+   }
 
 a:visited {
     color: inherit;
@@ -46,20 +49,23 @@ a:visited {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: start;        
-    min-height: 739px;
+    justify-content: start;
+    height: 100vh;      
+    /*min-height: 800px;*/
     padding: 20px;
     }
 
 .footer {
-    position: abolute;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: #274C77;
     color: #E7ECEF;
     font-size: 14px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 100px;
+    height: 60px;
     padding: 20px;    
     }
 
